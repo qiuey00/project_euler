@@ -7,12 +7,13 @@
  n=1
  answer=0
  a=0
- while a<= 4000000
+ while fib(n)< 4000000
    a=fib(n)
    if a%2==0
-     answer+=a
+     answer+= a
+     n+=1
     else 
       n+=1
     end
  end
- puts answer
+ puts "The answer is #{answer}"
