@@ -1,15 +1,16 @@
  #!/usr/bin/env rub
  a=0
  def fib(n)
-   z=fib(n-1)+fib(n-2)
-   return z
+   return n if n<=1
+   fib(n-1)+fib(n-2)
  end
- n=2
+ n=1
  answer=0
- a=fib(n)
+ 
  while a<= 4000000
+   a=fib(n)
    if a%2==0
-     answer+=fib(n)
+     answer+=a
     else 
       n+=1
     end
