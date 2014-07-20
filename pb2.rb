@@ -6,7 +6,7 @@
  end
  n=1
  answer=0
- 
+ a=0
  while a<= 4000000
    a=fib(n)
    if a%2==0
