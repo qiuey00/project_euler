@@ -1,4 +1,4 @@
-#!/usr/bin/env rub
+#!/usr/bin/env ruby
 a=0
 def fib(n)
   return n if n<=1
